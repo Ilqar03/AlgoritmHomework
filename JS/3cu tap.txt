@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var count=0
+        var cem=0
+        var Product=[
+            {
+                Id:1,
+                Name:"Corek",
+                Price:5
+            },
+            {
+                Id:2,
+                Name:"Kofe",
+                Price:1
+            },
+            {
+                Id:3,
+                Name:"Yuyucu toz",
+                Price:6
+            },
+            {
+                Id:4,
+                Name:"Meyve siresi",
+                Price:2
+            },
+            {
+                Id:5,
+                Name:"Bulka",
+                Price:1
+            },
+            {
+                Id:6,
+                Name:"Oyuncaq",
+                Price:10
+            },
+            {
+                Id:7,
+                Name:"Yag",
+                Price:7
+            }
+        ]
+     for (var i = 0; i < Product.length; i++) {
+        if ((Product[i].Id)%2!=0) {
+            count++;
+            cem+=Product[i].Price;
+            
+        }
+        
+        
+     }console.log("Id tek olan product-larin qiymet ortalamasi",cem/count);
+    </script>
+</body>
+</html>
